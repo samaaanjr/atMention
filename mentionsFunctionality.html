@@ -1,0 +1,8 @@
+﻿
+<div uib-dropdown dropdown-append-to-body is-open='showList && userData'>
+    <ul class="dropdown-menu mentionz" uib-dropdown-menu role="menu">
+        <li role="menuitem" ng-repeat='x in userData track by $index'> 
+            <a ng-click='chooseItem(x)' style="padding-left:10px"><img style="border-radius: 100%;width: 40px;height: 40px;margin-left:1px" ng-src="{{x.userProfilePicture}}" />&nbsp;&nbsp;&nbsp;&nbsp;<strong>{{x.name}}</strong>,&nbsp;&nbsp;@&nbsp;{{x.userName}}</a>
+        </li>
+    </ul>
+</div>
